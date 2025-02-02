@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+        }
+
+        .header {
+            display: flex;
+            background-color:blueviolet;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header a {
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .header li {
+            display: inline-block;
+            padding: 10px;
+        }
+
+        .row {
+            display: flex;
+            justify-content: center;
+            height: 700px;
+            align-items: center;
+        }
+
+        .row .box {
+            background-color: gold;
+            border: solid 1px gray;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 20px;
+        }
+        
+        .row2{
+            display: flex;
+            justify-content: center;
+            height: 600px;
+            align-items: center;
+            background-color: blanchedalmond;
+        }
+        .row2.box {
+            background-color: silver;
+            margin: 10px;
+        }
+        .footer{
+            background-color: black;
+            color:white;
+            text-align: center;
+            padding: 20px;
+        }
+        img{
+            width:300px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="header">
+            <div>
+                <h1>Online Store</h1>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Login</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="box">
+                <img src="img1.jpg">
+                <h3>Product 1</h3>
+                <h4>This is description of product</h4>
+                Price:$70<button>Add to Cart</button>
+            </div>
+            <div class="box">
+                <img src="img2.jpg">
+                <h3>Product 2</h3>
+                <h4>This is description of product</h4>
+                Price:$50<button>Add to Cart</button>
+            </div>
+            <div class="box">
+                <img src="img3.jpg">
+                <h3>Product 3</h3>
+                <h4>This is description of product</h4>
+                Price:$90<button>Add to Cart</button>
+            </div>
+        </div>
+        <div class="row2">
+            <div class="box">
+                <img src="img4.jpg">
+                </div>
+                <div>
+                <h3>Heading</h3>
+                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente repellendus voluptatem,
+                    distinctio, voluptatibus reiciendis fugiat aperiam labore ullam tempore iusto placeat animi libero
+                    in assumenda ex? Eaque sint adipisci veniam!</h4>  </div>
+
+        </div>
+        <div class="row2" style="background-color: aqua;">
+                <div>
+                <h3>Heading</h3>
+                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente repellendus voluptatem,
+                    distinctio, voluptatibus reiciendis fugiat aperiam labore ullam tempore iusto placeat animi libero
+                    in assumenda ex? Eaque sint adipisci veniam!</h4>  </div>
+                    <div class="box">
+                        <img src="img5.jpg">
+                        </div>
+
+        </div>
+            <div class="footer">
+               <footer>@Copyright 2024.All rights are reserved.</footer>
+            </div>
+            
+        </div>
+</body>
+
+</html>
