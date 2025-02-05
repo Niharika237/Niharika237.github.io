@@ -6,6 +6,7 @@
     
     <title>Document</title>
     <script>
+      let users=[]
         function showData(){
             //alert("Hello World")
             let name=document.getElementByID("name").value
@@ -13,7 +14,24 @@
             let password=document.getElementById("password").value
             let dob=document.getElementById("dob").value
 
-            data.innerHTML=name+","+ email +"," + password +"," +dob
+           // data.innerHTML='$(name),$(email),$(password),$(dob)'
+           let user={
+            name:name,
+            email:email,
+            password:password,
+            dob:dob
+
+           }
+           users.push(user);
+           console.log(users);
+           let length=users.length();
+           let str="";
+           fro(let i=0;i<length;i++)
+           {
+            str=str+`<li>${users[i].name}- ${users[i].email}- ${users[i].password}- ${users[i].dob}</li>`
+
+           }
+           data.innerHTML=str
         }
     </script>
   </head>
