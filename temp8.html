@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+        function showData(){
+            //alert("Hello World")
+            let name=document.getElementByID("name").value
+            data.innerHTML="Hello World"
+        }
+    </script>
+  </head>
+  <body>
+    <h1>New User Registartion Form</h1>
+   
+          <p><input type="text" placeholder="Enter Name" /></p>
+          <p><input type="text" placeholder="Enter Email Address" /></p>
+          <p><input type="Password" placeholder="Enter Password" /></p> 
+         <p><input type="datetime-local" id="dob" /></p>
+         <button onclick="showData()">Register</button>
+         <hr/>
+         <div id="data">Testing</div>
+  
+  </body>
+</html>
